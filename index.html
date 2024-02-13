@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id ="blog">
+      <article>
+        <h1>Blog1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure
+          nam natus ducimus amet magni obcaecati minima, nobis, aspernatur ex
+          quae id omnis suscipit veritatis corporis. Suscipit, ab maiores.
+          Consectetur nihil porro, ex cumque omnis perferendis iure itaque,
+          earum corporis praesentium, adipisci non necessitatibus. Saepe earum
+          necessitatibus ipsum doloremque neque?
+        </p>
+      </article>
+      <article>
+        <h1>Blog2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure
+          nam natus ducimus amet magni obcaecati minima, nobis, aspernatur ex
+          quae id omnis suscipit veritatis corporis. Suscipit, ab maiores.
+          Consectetur nihil porro, ex cumque omnis perferendis iure itaque,
+          earum corporis praesentium, adipisci non necessitatibus. Saepe earum
+          necessitatibus ipsum doloremque neque?
+        </p>
+      </article>
+      <article>
+        <h1>Blog3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure
+          nam natus ducimus amet magni obcaecati minima, nobis, aspernatur ex
+          quae id omnis suscipit veritatis corporis. Suscipit, ab maiores.
+          Consectetur nihil porro, ex cumque omnis perferendis iure itaque,
+          earum corporis praesentium, adipisci non necessitatibus. Saepe earum
+          necessitatibus ipsum doloremque neque?
+        </p>
+      </article>
+
+      <textarea name="" id="text" cols="50" rows="10"></textarea> <br />
+      <button id="add-blog">Submit</button>
+    </div>
+
+    <script>
+      const addBlogButton = document.getElementById("add-blog");
+      addBlogButton.addEventListener("click", function () {
+        const textarea = document.getElementById("textarea");
+        const textareaText = textarea.value;
+        const p = document.createElement("p");
+        p.innerText = textareaText;
+        const blog = document.getElementById("blog");
+        blog.appendChild(p)
+      })
+    </script>
+  </body>
+</html>
